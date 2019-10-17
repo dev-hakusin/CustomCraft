@@ -1,0 +1,24 @@
+{
+	"display":{
+		"icon":{
+			"item":"crafting_table"
+		},
+		"title":{
+			"text":"CustomCraft v1.1"
+		},
+		"description":{
+			"text":"created by yuki_256"
+		},
+		"background":"minecraft:textures/block/quartz_block_top.png",
+		"show_toast":false,
+		"announce_to_chat":false
+		},
+	"criteria":{
+		"dummy":{
+			"trigger":"tick"
+		}
+	},
+	"rewards":{
+		"function":"custom-craft:login-message"
+	}
+}

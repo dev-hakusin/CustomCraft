@@ -3,7 +3,13 @@ execute if entity @e[tag=CC-charge] as @e[tag=CC-charge] at @s run function cust
 
 scoreboard players reset @a[scores={CC-sneak=1..}] CC-sneak
 
+
+#execute if entity @e[tag=CC-core] as @e[tag=CC-core] at @s if entity @a[distance=..8] run particle minecraft:enchant ~ ~ ~ 0 0 0 1 1 normal @a
+
 execute if entity @e[tag=CC-core,nbt={ItemRotation:1b}] as @e[tag=CC-core,nbt={ItemRotation:1b}] at @s run function custom-craft:core/press
 execute if entity @e[tag=CC-success] as @e[tag=CC-success] at @s run function custom-craft:core/success
 
 execute if entity @e[tag=CC-core] as @e[tag=CC-core] at @s unless block ~ ~-0.5 ~ dropper run function custom-craft:core/break
+
+# ログイン時にメッセージ
+execute if entity @a[scores={CC-leave-game=1..}] as @a[scores={CC-leave-game=1..}] run function custom-craft:login-message

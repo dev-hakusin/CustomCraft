@@ -1,0 +1,2 @@
+scoreboard players reset @s CC-leave-game
+tellraw @s ["",{"text":"==============================\nCustomCrafter v1.1 is enabled!\n - created by ","color":"gray"},{"text":"yuki_256","bold":true,"underlined":true,"color":"gray","clickEvent":{"action":"open_url","value":"https://www.youtube.com/channel/UCtI1dT9gqF5s2jjtLYQk8rA"}}]
